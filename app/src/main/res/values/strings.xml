@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SPORT MATCH</string>
+    <string name="email"> email: </string>
+    <string name="usuario">Usúario</string>
+    <string name="menu">Menu</string>
+    <string name="categorias">Categorias</string>
+    <string name="mural">Mural</string>
+    <string name="perfil">Perfil</string>
+    <string name="futebol">FUTEBOL</string>
+    <string name="volei">VOLEI</string>
+    <string name="basquete">BASQUETE</string>
+    <string name="tenis">TENIS</string>
+    <string name="trilha">TRILHA</string>
+    <string name="rugby">RUGBY</string>
+    <string name="skate">SKATE</string>
+    <string name="kart">KART</string>
+    <string name="ftec">FTec @2022</string>
+    <string name="sair">Sair</string>
+</resources>

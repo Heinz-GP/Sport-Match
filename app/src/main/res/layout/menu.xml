@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Menu"
     android:background="#808080">
 
     <LinearLayout
@@ -14,8 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="1dp"
-            android:background="#808080">
+            android:layout_margin="1dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -52,27 +54,29 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp">
 
-            <ImageView
+
+            <ImageButton
+                android:id="@+id/btn_categorias"
                 android:layout_width="175dp"
                 android:layout_height="175dp"
+                android:padding="3dp"
+                android:backgroundTint="@color/gray"
                 android:contentDescription="@string/categorias"
+                android:scaleType="centerInside"
                 android:src="@drawable/categorias"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:clickable="true"
-                android:focusable="true"/>
 
+                />
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/btn_mural"
                 android:layout_width="175dp"
                 android:layout_height="175dp"
+                android:backgroundTint="@color/gray"
+                android:padding="3dp"
+                android:scaleType="centerInside"
                 android:contentDescription="@string/mural"
-                android:src="@drawable/mural"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:clickable="true"
-                android:focusable="true"
-                />
+                android:src="@drawable/mural" />
+
 
 
         </LinearLayout>
@@ -83,26 +87,26 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/btn_perfil"
                 android:layout_width="175dp"
                 android:layout_height="175dp"
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerInside"
                 android:contentDescription="@string/perfil"
+                android:padding="3dp"
                 android:src="@drawable/perfil"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:clickable="true"
-                android:focusable="true"
                 />
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/btn_sair"
                 android:layout_width="175dp"
                 android:layout_height="175dp"
+                android:scaleType="centerInside"
+                android:backgroundTint="@color/gray"
+                android:padding="3dp"
                 android:contentDescription="@string/sair"
                 android:src="@drawable/logout"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:clickable="true"
-                android:focusable="true"
                 />
 
         </LinearLayout>

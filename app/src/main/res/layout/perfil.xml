@@ -41,11 +41,9 @@
             <ImageView
                 android:layout_width="175dp"
                 android:layout_height="175dp"
-                android:layout_marginStart="90dp"
+                android:layout_marginStart="110dp"
                 android:src="@drawable/perfil"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:scaleType="fitCenter"
+                android:scaleType="centerCrop"
                 android:contentDescription="Imagen do Usuario"
                 />
         </LinearLayout>
@@ -130,11 +128,9 @@
                 android:id="@+id/btn_editarPerfil"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginStart="130dp"
+                android:layout_marginStart="150dp"
                 android:background="@color/gray"
-                android:scaleType="fitCenter"
-                android:scaleX="0.8"
-                android:scaleY="0.8"
+                android:scaleType="centerCrop"
                 android:src="@drawable/editar_perfil"
                 android:contentDescription="@string/editar_perfil"/>
 

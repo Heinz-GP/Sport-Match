@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private Button btn_login;
+    private Button btn_cadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         try{
             btn_login = findViewById(R.id.btn_login);
+            btn_cadastrar = findViewById(R.id.btn_cadastrar);
 
+            btn_cadastrar.setOnClickListener(this);
             btn_login.setOnClickListener(this);
         }catch (Exception e){
             e.getMessage();
@@ -29,10 +32,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(MainActivity.this, Menu.class);
-        startActivity(intent);
+        try{
+            if(view == btn_login){
+                startActivity(new Intent(this,Menu.class));
+            }else if(view == btn_cadastrar){
+                startActivity(new Intent(this, Cadastrar.class));
+            }
+        }catch (Exception e){
+            e.getMessage();
+            e.printStackTrace();
+        }
+
     }
-
-
 
 }

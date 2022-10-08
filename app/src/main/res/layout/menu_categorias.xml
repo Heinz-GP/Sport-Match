@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_skate"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuCategorias">
@@ -9,24 +10,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#808080">
+        android:background="#808080"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:orientation="vertical"
-            android:background="#808080">
+            android:background="#808080"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/usuario"
-                android:textSize="30sp"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -34,109 +35,106 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="70dp"
             android:background="@color/white">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="70dp"
                 android:text="@string/categorias"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="30sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:id="@+id/btn_futebol"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_marginStart="20dp"
-                android:text="@string/futebol"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerCrop"
+                android:src="@drawable/futebol" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:id="@+id/btn_volei"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_marginStart="20dp"
-                android:text="@string/volei"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerCrop"
+                android:src="@drawable/volei" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:id="@+id/btn_basquete"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_marginStart="20dp"
-                android:text="@string/basquete"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerCrop"
+                android:src="@drawable/basquete" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:id="@+id/btn_tenis"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_marginStart="20dp"
-                android:text="@string/tenis"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tenis" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:background="#808080">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:id="@+id/btn_trilha"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_marginStart="20dp"
-                android:text="@string/trilha"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trilha" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:text="@string/rugby"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+            <ImageButton
+                android:id="@+id/btn_rugby"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rugby" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="11dp"
-                android:text="@string/skate"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skate" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:text="@string/kart"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+            <ImageButton
+                android:id="@+id/btn_corrida"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/gray"
+                android:scaleType="centerCrop"
+                android:src="@drawable/corrida" />
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,30 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#808080">
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"
         android:orientation="vertical"
-        android:background="@color/gray">
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:orientation="vertical"
-            android:background="#808080">
+            android:background="#4eec84">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/app_name"
-                android:textSize="30dp"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -94,7 +93,7 @@
                 android:text="Login"
                 android:textColor="@color/black"
                 android:textSize="20dp"
-                android:backgroundTint="@color/gray"/>
+                android:backgroundTint="#4eec84"/>
         </LinearLayout>
 
         <LinearLayout
@@ -119,7 +118,7 @@
                 android:id="@+id/btn_cadastrar"
                 android:layout_width="130dp"
                 android:layout_height="35dp"
-                android:backgroundTint="@color/gray"
+                android:backgroundTint="#4eec84"
                 android:text="Clique aqui"
                 android:textColor="@color/black" />
 

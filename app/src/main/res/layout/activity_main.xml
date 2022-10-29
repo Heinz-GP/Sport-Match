@@ -26,7 +26,7 @@
                 android:text="@string/app_name"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="30dp"
+                android:textSize="25sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Email:"
-            android:textSize="30dp"
+            android:textSize="25sp"
             android:textStyle="bold"
                 android:textColor="@color/black"/>
 
@@ -51,7 +51,7 @@
                 android:layout_height="match_parent"
                 android:inputType="text"
                 android:textColor="@color/black"
-                android:textSize="30dp"
+                android:textSize="20sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="@string/senha"
-                android:textSize="30dp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
@@ -76,7 +76,7 @@
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
-                android:textSize="30dp"
+                android:textSize="20sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
@@ -84,7 +84,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
 
             <Button
                 android:id="@+id/btn_login"
@@ -92,21 +93,21 @@
                 android:layout_height="wrap_content"
                 android:text="Login"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:backgroundTint="#4eec84"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="400dp">
 
 
             <TextView
                 android:id="@+id/CriarRegistro"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
+                android:layout_marginStart="75dp"
                 android:layout_marginTop="9dp"
                 android:text="Não Possui Registro?"
                 android:textColor="@color/black"

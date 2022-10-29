@@ -26,7 +26,7 @@
                 android:text="@string/usuario"
                 android:textColor="@color/black"
                 android:textAlignment="center"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:background="#4eec84"
                 />
@@ -36,11 +36,12 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <ImageView
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_marginStart="110dp"
                 android:src="@drawable/perfil"
                 android:scaleType="centerCrop"
@@ -53,11 +54,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="50dp"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
+                android:layout_height="22dp"
                 android:text="@string/sobre"
                 android:textSize="20sp"
                 android:textColor="@color/black"
@@ -67,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="15sp"
+                android:textSize="10sp"
                 android:textColor="@color/black"
                 android:text="alguma coisa aqui"/>
 
@@ -76,14 +78,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="@string/categorias"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
 
@@ -97,22 +100,22 @@
 
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/categorias"
                 android:contentDescription="@string/categorias"
                 />
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/categorias"
                 android:contentDescription="@string/categorias"
                 />
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/categorias"
                 android:contentDescription="@string/categorias"
                 />
@@ -122,7 +125,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="150dp">
 
             <ImageButton
                 android:id="@+id/btn_editarPerfil"

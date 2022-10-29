@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/usuario"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:background="#4eec84"/>
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/mural"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:background="#4eec84"/>
@@ -67,7 +67,7 @@
             <Button
                 android:id="@+id/btn_1msg"
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:text="primeira mensagem"
                 android:textAlignment="viewStart"
@@ -83,7 +83,7 @@
             <Button
                 android:id="@+id/btn_2msg"
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:text="Segunda mensagem"
                 android:textAlignment="viewStart"
@@ -99,7 +99,7 @@
             <Button
                 android:id="@+id/btn_3msg"
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:text="Terceira mensagem"
                 android:textAlignment="viewStart"
@@ -111,12 +111,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="250dp">
 
             <ImageButton
                 android:id="@+id/btn_novaPostagem"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_marginStart="150dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"

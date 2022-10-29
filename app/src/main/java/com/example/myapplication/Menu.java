@@ -15,6 +15,7 @@ public class Menu extends AppCompatActivity implements  View.OnClickListener{
     private ImageButton btn_perfil;
     private ImageButton btn_mural;
     private ImageButton btn_sair;
+    private ImageButton btn_conversar;
 
 
 
@@ -28,11 +29,14 @@ public class Menu extends AppCompatActivity implements  View.OnClickListener{
             btn_perfil = findViewById(R.id.btn_perfil);
             btn_mural = findViewById(R.id.btn_mural);
             btn_sair = findViewById(R.id.btn_sair);
+            btn_conversar = findViewById(R.id.btn_conversar);
+
 
             btn_categorias.setOnClickListener(this);
             btn_perfil.setOnClickListener(this);
             btn_mural.setOnClickListener(this);
             btn_sair.setOnClickListener(this);
+            btn_conversar.setOnClickListener(this);
         }catch (Exception e){
             e.getMessage();
             e.printStackTrace();
@@ -50,6 +54,9 @@ public class Menu extends AppCompatActivity implements  View.OnClickListener{
             startActivity(i);
         }else if(view == btn_mural){
             Intent i = new Intent(getApplicationContext(), Mural.class);
+            startActivity(i);
+        }else if(view == btn_conversar){
+            Intent i = new Intent(getApplicationContext(), Conversar.class);
             startActivity(i);
         }else if(view == btn_sair){
             finish();

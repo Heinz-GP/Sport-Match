@@ -8,11 +8,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
 
     private Button btn_login;
     private Button btn_cadastrar;
+    private FirebaseAnalytics mFirebaseAnalytics;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             btn_cadastrar.setOnClickListener(this);
             btn_login.setOnClickListener(this);
+
+            mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
         }catch (Exception e){
             e.getMessage();
             e.printStackTrace();

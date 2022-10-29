@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -23,14 +25,15 @@ public class Cadastrar extends AppCompatActivity {
     private EditText et_telefone;
     private Button btn_cadastrar;
     private Button btn_chamaLogin;
-    private FirebaseAuth fAuth;
-
+    private FirebaseAuth mAuth;
+    private Task tarefa;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cadastrar);
+
 
         try {
             et_nome = findViewById(R.id.et_nome);
@@ -41,6 +44,11 @@ public class Cadastrar extends AppCompatActivity {
             btn_chamaLogin = findViewById(R.id.btn_chamaLogin);
 
 
+            mAuth = FirebaseAuth.getInstance();
+
+
+
+
             btn_chamaLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -48,12 +56,6 @@ public class Cadastrar extends AppCompatActivity {
                 }
             });
 
-            fAuth = FirebaseAuth.getInstance();
-
-            if(fAuth.getCurrentUser() != null){
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                finish();
-            }
 
             btn_cadastrar.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -62,47 +64,43 @@ public class Cadastrar extends AppCompatActivity {
                         String email = et_email.getText().toString().trim();
                         String senha = et_senha.getText().toString().trim();
 
-                        if(TextUtils.isEmpty(email)){
+                        if (TextUtils.isEmpty(email)) {
                             et_email.setError("Email é necessário");
                             return;
                         }
-                        if(TextUtils.isEmpty(senha)){
+                        if (TextUtils.isEmpty(senha)) {
                             et_senha.setError("Senha é necessária");
                             return;
                         }
-                        if(senha.length() < 6){
+                        if (senha.length() < 6) {
                             et_senha.setError("Senha deve ter mais de 6 caracteres");
                             return;
                         }
 
-                        //Criar conta
+                        tarefa = mAuth.createUserWithEmailAndPassword(email, senha);
+                        if(!tarefa.isSuccessful()){
+                            Toast.makeText(getApplicationContext(), "Falha ao cadastrar!", Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(getApplicationContext(), "Cadastrado com Sucesso", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), Menu.class));
+                        }
 
-                        fAuth.createUserWithEmailAndPassword(email,senha).addOnCompleteListener(task -> {
-                            if (task.isSuccessful()){
-                                Toast.makeText(Cadastrar.this, "Usuário Criado!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                            }else{
-                                Toast.makeText(Cadastrar.this, "Erro!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        });
 
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         e.getMessage();
                         e.printStackTrace();
                     }
                 }
             });
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.getMessage();
             e.printStackTrace();
         }
 
-
     }
 
 
-
-
-
 }
+
+

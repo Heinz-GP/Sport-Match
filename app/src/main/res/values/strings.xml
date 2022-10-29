@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SPORT MATCH</string>
     <string name="email">Email</string>
-    <string name="usuario">Usúario</string>
+    <string name="usuario">Usuário</string>
     <string name="login">Login</string>
     <string name="criar_usuario">Criar Usuário</string>
     <string name="nome">Nome</string>
@@ -25,6 +25,7 @@
     <string name="sair">Sair</string>
     
     <string-array name="spn_categorias">
+        <item>Selecione...</item>
         <item>Futebol</item>
         <item>Volêi</item>
         <item>Basquete</item>

@@ -25,7 +25,7 @@
                 android:text="@string/usuario"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:background="#4eec84"/>
 
@@ -43,7 +43,7 @@
                 android:text="@string/categorias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:background="#4eec84"/>
 
@@ -57,8 +57,8 @@
 
             <ImageButton
                 android:id="@+id/btn_futebol"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"
@@ -66,27 +66,27 @@
 
             <ImageButton
                 android:id="@+id/btn_volei"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"
                 android:src="@drawable/volei" />
 
             <ImageButton
                 android:id="@+id/btn_basquete"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"
                 android:src="@drawable/basquete" />
 
             <ImageButton
                 android:id="@+id/btn_tenis"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"
                 android:src="@drawable/tenis" />
@@ -95,13 +95,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             >
 
             <ImageButton
                 android:id="@+id/btn_trilha"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"
@@ -109,26 +109,26 @@
 
             <ImageButton
                 android:id="@+id/btn_rugby"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"
                 android:src="@drawable/rugby" />
 
             <ImageButton
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"
                 android:src="@drawable/skate" />
 
             <ImageButton
                 android:id="@+id/btn_corrida"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
                 android:background="@color/white"
                 android:scaleType="centerCrop"
                 android:src="@drawable/corrida" />

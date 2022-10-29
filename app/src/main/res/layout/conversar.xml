@@ -2,21 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Conversar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Conversar"
     android:background="@color/white">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            >
 
             <TextView
                 android:layout_width="match_parent"
@@ -27,11 +29,55 @@
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:background="#4eec84"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_1msg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/white"
+                android:text="primeira mensagem"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_2msg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/white"
+                android:text="Segunda mensagem"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_3msg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/white"
+                android:text="terceira mensagem"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

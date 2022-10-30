@@ -23,6 +23,7 @@
     <string name="kart">KART</string>
     <string name="ftec">FTec @2022</string>
     <string name="sair">Sair</string>
+    <string name="conversar">Conversar</string>
     
     <string-array name="spn_categorias">
         <item>Selecione...</item>

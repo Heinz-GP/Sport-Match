@@ -69,7 +69,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
-                android:text="primeira mensagem"
+                android:text="Futebol - 20/11/22 - 20:30 ás 21:30"
+                android:textAllCaps="false"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black" />
 
@@ -85,7 +86,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
-                android:text="Segunda mensagem"
+                android:text="Corrida - 23/11/22 - 8:00 ás 11:00"
+                android:textAllCaps="false"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black" />
 
@@ -101,7 +103,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
-                android:text="Terceira mensagem"
+                android:text="Beach Tennis - 24/11/22 - 18:00 á 19:00"
+                android:textAllCaps="false"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black" />
 

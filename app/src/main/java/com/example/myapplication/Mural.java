@@ -1,11 +1,13 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +19,7 @@ public class Mural extends AppCompatActivity implements View.OnClickListener {
     private Button btn_3msg;
     private ImageButton btn_novaPostagem;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,7 @@ public class Mural extends AppCompatActivity implements View.OnClickListener {
             btn_2msg = findViewById(R.id.btn_2msg);
             btn_3msg = findViewById(R.id.btn_3msg);
             btn_novaPostagem = findViewById(R.id.btn_novaPostagem);
+
 
             spn_escolherCat = (Spinner) findViewById(R.id.spn_escolherCat);
             ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spn_categorias, android.R.layout.simple_spinner_item);
@@ -52,15 +56,14 @@ public class Mural extends AppCompatActivity implements View.OnClickListener {
         if(view == spn_escolherCat){
 
         }else if(view == btn_1msg){
-
+            startActivity( new Intent(getApplicationContext(), Atividade.class));
         }else if(view == btn_2msg){
-
+            startActivity( new Intent(getApplicationContext(), Atividade.class));
         }else if(view == btn_3msg){
-
+            startActivity( new Intent(getApplicationContext(), Atividade.class));
         }else if(view == btn_novaPostagem){
 
         }
     }
-
 
 }

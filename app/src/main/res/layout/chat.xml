@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/usuario"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:background="#4eec84"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg8"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg7"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg6"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg5"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg4"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg3"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg2"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg1"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"/>
+
+            <Button
+                android:id="@+id/btn_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#4eec84"
+                android:text="Enviar"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

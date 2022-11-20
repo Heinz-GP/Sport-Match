@@ -10,6 +10,11 @@
     <string name="menu">Menu</string>
     <string name="categorias">Categorias</string>
     <string name="mural">Mural</string>
+    <string name="postar_mural">Postar Mural</string>
+    <string name="data">Data</string>
+    <string name="horarioInicio">Horário Inicio</string>
+    <string name="horarioFinal">Horário Fim</string>
+    <string name="local">Local</string>
     <string name="perfil">Perfil</string>
     <string name="sobre">SOBRE</string>
     <string name="editar_perfil">Editar Perfil</string>

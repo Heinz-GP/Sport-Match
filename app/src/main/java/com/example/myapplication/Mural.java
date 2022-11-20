@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
-import android.widget.TextView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -62,7 +62,7 @@ public class Mural extends AppCompatActivity implements View.OnClickListener {
         }else if(view == btn_3msg){
             startActivity( new Intent(getApplicationContext(), Atividade.class));
         }else if(view == btn_novaPostagem){
-
+            startActivity(new Intent(getApplicationContext(), PostarMural.class));
         }
     }
 

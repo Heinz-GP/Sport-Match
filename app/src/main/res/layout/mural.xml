@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
-                android:text="Beach Tennis - 24/11/22 - 18:00 á 19:00"
+                android:text="Beach Tennis - 24/11/22 - 18:00 ás 19:00"
                 android:textAllCaps="false"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black" />

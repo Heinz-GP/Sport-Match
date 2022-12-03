@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 public class Usuario {
 
+    private int id;
     private String nome;
     private String cpf;
     private String dataNasc;
@@ -15,10 +16,11 @@ public class Usuario {
 
     }
 
-    public Usuario(String nome, String senha, String email){
+    public Usuario(String nome, String email, String senha, String telefone){
         this.nome = nome;
-        this.senha = senha;
         this.email = email;
+        this.senha = senha;
+        this.telefone = telefone;
     }
 
     public Usuario(String nome, String cpf, String dataNasc, String sexo, String senha, String email, String telefone, String atividade){
@@ -32,6 +34,14 @@ public class Usuario {
         this.atividade = atividade;
     }
 
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return nome;
@@ -65,14 +75,6 @@ public class Usuario {
         this.sexo = sexo;
     }
 
-    public String getAtividade() {
-        return atividade;
-    }
-
-    public void setAtividade(String atividade) {
-        this.atividade = atividade;
-    }
-
     public String getSenha() {
         return senha;
     }
@@ -95,5 +97,13 @@ public class Usuario {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public String getAtividade() {
+        return atividade;
+    }
+
+    public void setAtividade(String atividade) {
+        this.atividade = atividade;
     }
 }
